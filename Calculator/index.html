@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <input type="text" readonly id="screen" placeholder="0">
+            </div>
+
+            <div class="btn-grps">
+
+                <button onclick="showValue('/')" class="operator">/</button>
+                <button onclick="showValue('*')" class="operator">x</button>
+                <button onclick="showValue('-')" class="operator">-</button>
+                <button onclick="showValue('c')" class="operator">C</button>
+                
+                <button onclick="showValue('7')" >7</button>
+                <button onclick="showValue('8')">8</button>
+                <button onclick="showValue('9')">9</button>
+                <button onclick="showValue('(')" class="operator">(</button>
+                
+                <button onclick="showValue('4')">4</button>
+                <button onclick="showValue('5')">5</button>
+                <button onclick="showValue('6')">6</button>
+                <button onclick="showValue(')')" class="operator">)</button>
+                
+                <button onclick="showValue('1')">1</button>
+                <button onclick="showValue('2')">2</button>
+                <button onclick="showValue('3')">3</button>
+                <button onclick="showValue('+')" class="operator">+</button>
+                
+                <button onclick="showValue('00')">00</button>
+                <button onclick="showValue('0')" class="colspaned">0</button>
+                <button onclick="showValue('=')"  class="equal">=</button>
+            </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
