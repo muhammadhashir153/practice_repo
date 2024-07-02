@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-form, .signup-form {
+    display: none;
+  }
+  
+  .login-form.active, .signup-form.active {
+    display: block;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .signup-link, .login-link {
+    text-decoration: none;
+    color: #4CAF50;
+  }
+  
+  .signup-link:hover, .login-link:hover {
+    color: #3e8e41;
+  }
+  
+  .login-form.active ~ .signup-form {
+    display: none;
+  }
+  
+  .signup-form.active ~ .login-form {
+    display: none;
+  }
